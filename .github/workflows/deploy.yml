@@ -20,7 +20,7 @@ jobs:
       - name: Deploy to ECS
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@3.1.102.179 << 'EOF'
-            cd /var/www/halal_certify
+            cd /var/www/website/halal_certify
             git pull origin main
             # Restart Nginx or any other service if needed
             sudo systemctl restart nginx
